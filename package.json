@@ -1,0 +1,20 @@
+{
+    "name": "setupnode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "ts-node-dev --respawn --ignore-watch node_modules --no-notify src/server.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "ts-node-dev": "^1.0.0",
+        "typescript": "^4.0.5"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.9",
+        "express": "^4.17.1"
+    }
+}
