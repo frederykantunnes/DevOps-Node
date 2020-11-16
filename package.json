@@ -5,16 +5,22 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "ts-node-dev --respawn --ignore-watch node_modules --no-notify src/server.ts"
+        "start:dev": "npm run swagger && ts-node src/index.ts ",
+        "build": "tsc",
+        "swagger": "swaggerGen -c ./swaggerConfig.json"
     },
-    "author": "",
+    "author": "Frederyk Antunnes <frederykantunnes@gmail.com>",
     "license": "ISC",
     "devDependencies": {
-        "ts-node-dev": "^1.0.0",
-        "typescript": "^4.0.5"
+        "ts-node": "^9.0.0",
+        "typescript": "^4.0.5",
+        "typescript-rest": "^3.0.2"
     },
     "dependencies": {
         "@types/express": "^4.17.9",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "typescript": "^4.0.5",
+        "typescript-rest": "^3.0.2",
+        "typescript-rest-swagger": "^1.1.5"
     }
 }

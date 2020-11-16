@@ -1,0 +1,22 @@
+{
+    "swagger": {
+        "outputDirectory": "./dist",
+        "entryFile": "./src/resources/*",
+        "outputFormat": "OpenApi_3",
+        "version": "1.0",
+        "produces": ["application/json"],
+        "name": "TECH-SAPIENS: rs-n-s-user",
+        "description": "Micro serviço Node - SQL: Tabela User",
+        "license": "MIT",
+        "ignore": [
+            "**/node_modules/**"
+        ],
+        "securityDefinitions": {
+            "api_key": {
+                "type": "apiKey",
+                "name": "access_token",
+                "in": "query"
+            }
+        }
+    }
+}
