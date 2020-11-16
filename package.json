@@ -6,6 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start:dev": "npm run swagger && ts-node src/index.ts ",
+        "start:prod": "npm run swagger && node dist/index.js ",
         "build": "tsc",
         "swagger": "swaggerGen -c ./swaggerConfig.json"
     },
